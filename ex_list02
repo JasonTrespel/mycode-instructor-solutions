@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+# making grocery list
+shopping = ["bananas", "candy", "crackers", "juice"]
+
+print(shopping)
+
+# print item number 3
+print(shopping[3])
