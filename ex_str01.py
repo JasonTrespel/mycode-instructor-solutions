@@ -7,7 +7,7 @@ string1 = "This is my first example!"
 print(string1[5:16])
 
 # showing strings can be repeated by adding multipliers
-print(string1*2)
+print(string1*3)
 
 # move to using string2 and more examples
 string2 = "This is my second example!"
