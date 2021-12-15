@@ -4,16 +4,19 @@
 # a for loop will iterate across all items in a list/dictionary/tuple
 
 # start with a list of pet names
-petlist = ["Fluffy", "Garfield", "Snowball", "Oliver"]
+petlist = ["Fluffy", "Garfield", "Snowball", "Olvier"]
 
 # loop across list
-for pets in petlist:
+for pet in petlist:
     print(petlist)
+
+# loop in a different way
+for each in petlist:
+    print(each)
 
 # change list to change loop
 petlist = ["Oliver", "Garfield", "Poofy"]
 
 for pets in petlist:
-    print(petlist[1])
+    print("I have a pet named:" + pets)
 
-print(petlist[2])
