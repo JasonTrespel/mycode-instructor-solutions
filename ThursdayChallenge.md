@@ -4,10 +4,9 @@ Start by making a file called `switch_cmds.txt` with the following commands in i
 
 ```
 show ver
-show host
-show ip http
-show trace
-show user
+show hostname
+show arp
+show history
 ```
 
 Then write a python script that reads in this file and runs all of these commands against `sw-1`, `sw-2`, and the Cisco-NXOS switch (See lab 30 for connection details). 
