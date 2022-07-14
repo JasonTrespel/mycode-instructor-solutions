@@ -9,6 +9,13 @@ show arp
 show history
 ```
 
+
+HInt: SW1 = ["arista_eos", "sw-1", "admin", "alta3"]
+SW2 = ["arista_eos", "sw-2", "admin", "alta3"]
+NXOS = ["cisco_nxos", "sandbox-nxos-1.cisco.com", "admin", "Admin_1234!"]
+
+DEVICES = [SW1, SW2, NXOS]
+
 Then write a python script that reads in this file and runs all of these commands against `sw-1`, `sw-2`, and the Cisco-NXOS switch (See lab 30 for connection details). 
 
 Print out the responses.
