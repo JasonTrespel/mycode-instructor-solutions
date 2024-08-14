@@ -1,0 +1,30 @@
+---
+- name: Wednesday Challenge. To create users, install figlet, and show a message
+  hosts: planetexpress:!farnsworth
+  gather_facts: yes
+  connection: ssh
+
+  # vars files pulling in names
+  vars_files:
+  - ~/mycode/vars/wed_challenge_names.yml
+
+  tasks:
+    # using agnostic module to install packages
+  - name: Install figlet using package
+    ansible.builtin.package:
+      name: figlet
+      state: present
+    become: yes
+
+  - name: pull in names and create users
+    ansible.builtin.user:
+      name: "{{ item }}"
+      comment: for testing purposes
+      state: present
+      shell: /bin/bash
+    become: yes
+    loop: "{{ wednesday }}"
+
+  - name: practice with debug
+    ansible.builtin.debug:
+      msg: "I've completed the challenge!"
