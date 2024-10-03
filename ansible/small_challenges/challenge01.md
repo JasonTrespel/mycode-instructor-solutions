@@ -3,6 +3,10 @@
 ## Part 1: Setup
 1. Create a new directory within `mycode` called `small_challenges` and cd in to it. Next create a playbook called `small_solution01.py`
 
+   `student@bchd:~$` `mkdir -p ~/mycode/small_challenges`
+
+   `~/mycode/small_challenges` `vim small_solution01.py`
+
 ## Part 2: Creation
 1. Within your new playbook target the localhost. Create a task that sends a GET request to one of these Open APIs:
    1. https://swapi.dev/
