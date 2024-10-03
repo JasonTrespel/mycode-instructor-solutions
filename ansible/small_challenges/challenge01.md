@@ -17,7 +17,7 @@
 3. Display the contents of that variable to standard out.
 
 ## Part 3: Bonus
-1. Modify your playbook to target the planetexpress group (exclude Farnsworth). Create a new task that sends a GET request to an API, but then places the response into a file. Copy the file to the target machines.
+1. Modify your playbook to target the planetexpress group (exclude Farnsworth). Create a new task that sends a GET request to an API, but then places the response into a file called `response.json`. Send the file to the target machines.
 
 ## Part 4: Xtra Bonus
 1. Slice through the JSON response and return the value to a key of your choosing. Read the API documentation to see what keys are available.
