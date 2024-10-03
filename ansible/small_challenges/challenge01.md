@@ -5,7 +5,7 @@
 
    `student@bchd:~$` `mkdir -p ~/mycode/small_challenges`
 
-   `~/mycode/small_challenges` `vim small_solution01.yml`
+   `student@bchd:~/mycode/small_challenges$` `vim small_solution01.yml`
 
 ## Part 2: Creation
 1. Within your new playbook target the localhost. Create a task that sends a GET request to one of these Open APIs:
