@@ -32,7 +32,7 @@
 
   - name: Place fav color answer in color directory
     ansible.builtin.shell: |
-      echo "{{ my_color_choice }}" > /home/color/color.txt
+      echo "{{ my_color_choice }}" > home/color/color.txt
       ls /home
     register: verify_output
 
